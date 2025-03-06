@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #f8f8f8;
+        }
+        .header nav {
+            display: flex;
+            align-items: center;
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f8f8f8;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 20px;
+        }
+        .hero img {
+            width: 40%;
+            background: #ddd;
+            height: 300px;
+        }
+        .project-section,
+        .exhibits-section,
+         .takeaways-section {
+            padding: 40px 20px;
+        }
+        .carousel {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .carousel div {
+            width: 30%;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #628067;
+            color: #FFFFFF;
+        }
+        .exhibit {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .exhibit img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+        .exhibit-caption {
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="AM_Logo.svg" alt="Antonio Montes Logo">
+        </div>
+        <nav>
+            <a href="HomePage.html">Home</a>
+            <a href="About_Me.html">About Me</a>
+            <div class="dropdown">
+                <a href="#">Case Studies ▼</a>
+                <div class="dropdown-content">
+                    <a href="DaaS_Retention.html">DaaS Retention</a>
+                    <a href="Prints_Of_Love.html">Prints Of Love</a>
+                </div>
+            </div>
+            <a href="#">Side Projects</a>
+            <a href="https://www.linkedin.com/in/aamnts" target="_blank">LinkedIn</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section class="main-section">
+          <h1>Side Projects</h1>
+          <p>Exploring creativity, problem-solving, and AI-driven solutions.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>I Have an AI For That</h2>
+            <p>As my MBA wrapped up, I realized there was so much more to my skill set than a résumé could capture. I wanted a place to showcase projects, highlights, and all the other cool stuff that doesn’t quite fit on a one-pager.</p>
+            <p>I figured a personal portfolio site would fill that gap—plus it’d help me remember the smaller wins from various side projects and case studies. Only catch? My budget was basically toast from the aforementioned MBA adventure, so hiring a web developer was out of the question.</p>
+            <p>Enter AI! With some creativity (and a handful of prompts), I’ve been able to spin up a site, refine my copy, and experiment with different designs—all with minimal development experience.</p>
+        </section>
+
+        <section class="project-section">
+            <h2>Approach</h2>
+            <p>I kicked things off by outlining all the content I wanted on the site: an About Me page, contact info, case studies, and side projects. Once I was happy with my list, I drafted the copy in Google Docs. Then, I fed everything into Relume AI for a sitemap and initial wireframes.</p>
+            <p>With an intuitive sitemap in hand, I moved on to design. To lock down my color palette, I used a Colors AI, aiming for something that felt both professional and fun. I whipped up a quick AI-generated image using ChatGPT, then polished it into a vectorized logo using Vector IO.</p>
+            <p>Next, I took the wireframes and asked ChatGPT to generate the HTML and CSS for five web pages. Whenever I had new text or tweaks, I’d just toss it into ChatGPT, and it updated everything accordingly. My goal here was to move fast and get feedback—design isn’t my strong suit, and I’m no developer, so I wanted to put something functional out there, gather input, and then iterate.</p>
+            <p>For hosting, I used GitHub Pages because, let’s face it, I’m on the “free is best” plan post-MBA. That meant a bit of command line tinkering to push my code and direct folks to my new site.</p>
+            <p>Since user feedback is crucial, consider this Version 1. I’m actively adding to my product backlog based on feedback and developing new user stories for future improvements. It’s all about prioritizing what matters, and since I’m the only stakeholder, I’m making the calls on what comes next!</p>
+        </section>
+
+        <section class="section exhibit">
+            <h2>Exhibits</h2>
+            <img src="https://i.postimg.cc/SQXd3QGs/temp-Image-Yy-LUn-F.avif" alt=" Portfolio Sitemap">
+            <p class="exhibit-caption">A preview of the original sitemap.</p>
+            <img src="Home Page Wire Frame.png" alt="Homepage Wireframe">
+            <p class="exhibit-caption">AI generated Wireframe for Homepage</p>
+            <iframe 
+            style="border: 1px solid rgba(0, 0, 0, 0.1); width: 100%; height: 500px;" 
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRj6IYVxtMSSDkm_5ODi201VjAYPsN-8teRDBnlzOJf4whmc5Kl4k1kNonIa8Ie35Cz2dUE8JatVEbK/pubhtml?widget=true&amp;headers=false" 
+            allowfullscreen>
+            </iframe>
+            <p class="exhibit-caption">Portfolio backlog with priotization</p>
+        </section>
+        <section class="takeaways-section">
+            <h2>Key Takeaways</h2>
+            <ul>
+                <li><strong>Development Isn’t All Sunshine and Rainbows:</strong> While the design and copywriting were enjoyable, coding and deployment were challenging.</li>
+                <li><strong>Guided Feedback Beats Passive Browsing:</strong> Sending people a link didn’t yield much insight. Structured user interviews led to valuable, actionable feedback.</li>
+                <li><strong>A Good Discussion Guide = Solid Hypotheses:</strong> Focused research guides made a significant difference, helping uncover useful improvements for the next iteration.</li>
+            </ul>
+        </section>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Logo</div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/aamnts" target="_blank">LinkedIn</a>
+                <a href="Side_Projects.html">Projects</a>
+                <a href="Prints_of_Love.html">Case Studies</a>
+                <a href="mailto:aam1031@stern.nyu.edu">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Antonio Montes. All rights reserved.</p>
+            <a href="#">Any Trademark remains the property of its respective owner(s)</a>
+            <a href="#">Work cannot be used without permission from Antonio Montes</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+

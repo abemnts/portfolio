@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resubscribing to a DaaS Produc Case Study</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #2F5D53;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #f8f8f8;
+        }
+        .header nav {
+            display: flex;
+            align-items: center;
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f8f8f8;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .exhibit {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .exhibit img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+        .exhibit-caption {
+            font-style: italic;
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #628067;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="AM_Logo.svg" alt="Antonio Montes Logo">
+        </div>
+        <nav>
+            <a href="HomePage.html">Home</a>
+            <a href="About_Me.html">About Me</a>
+            <div class="dropdown">
+                <a href="#">Case Studies ▼</a>
+                <div class="dropdown-content">
+                    <a href="DaaS_Retention.html">DaaS Retention</a>
+                    <a href="Prints_of_Love.html">Prints Of Love</a>
+                </div>
+            </div>
+            <a href="Side_Projects.html">Side Projects</a>
+            <a href="https://www.linkedin.com/in/aamnts" target="_blank">LinkedIn</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Resubscribing to a DaaS Product</h1>
+
+        <div class="section">
+            <h2>Context:</h2>
+            <p>As the Product Manager responsible for the North and South American regions, I was tasked with overseeing both the product itself and the customer base across these territories. The product in question is a comprehensive, curated platform that supports research in fields such as materials science, physics, chemistry, and engineering, providing advanced data and functionalities.</p>
+            <p>The product offers an extensive database, covering multiple material classes and property types, with enhanced features such as interactive visualizations, data tables, and phase diagrams—enabling seamless export for further analysis. Optimized search functions allow users to quickly find material property data based on elemental composition or chemical structure, ensuring a high-quality, trusted resource for researchers.</p>
+            <p>Our business model follows a B2B2C approach, where we sold subscriptions to research laboratories, academic institutions, consortia, and private industry. Notably, the decision makers—often chemistry librarians or institutional buyers—were distinct from the end users, who were the researchers themselves. This dynamic created an added layer of complexity in aligning both the product's functionality and the value proposition for both groups.</p>
+        </div>
+
+        <div class="section">
+            <h2>Firm's Goal:</h2>
+            <p>The firm’s overarching objective was growth—specifically, product-led growth. In the immediate term, the priority was expanding our subscribed customer footprint by increasing the number of users actively engaging with our product.</p>
+        </div>
+
+        <div class="section">
+            <h2>Strategy Alignment:</h2>
+            <p>The challenge was twofold: attract new customers while reducing churn among the existing subscribed base. In leading this initiative, my focus was squarely on uncovering and defining the right problems—specifically, understanding why certain users, despite holding institutional subscriptions, were not fully engaging with the product. At this stage, the goal was not to jump into solutioning but to concentrate on identifying precise problem statements. By utilizing a data offense approach—leveraging data to enable capabilities that drive customer growth and increase product utilization.</p>
+        </div>
+
+        <div class="section exhibit">
+            <h2>Exhibit:</h2>
+            <img src="https://i.postimg.cc/FFPpndSw/temp-Image4p-ICc4.avif" alt="Framework for the Business Value of Data">
+            <p class="exhibit-caption">Framework for the business value of Data</p>
+        </div>
+
+        <div class="section">
+            <h2>Problem Identification:</h2>
+            <p>I sought to dissect user behavior data to pinpoint the exact friction points hindering product utilization. To achieve this, I employed a mixed-methods approach, combining direct user observation with quantitative data analysis.</p>
+            <p>User interviews were conducted via online recorded sessions, where participants engaged with the platform in real time and semi-quantitative and qualitative questions were posed. Rather than guiding them toward specific workflows, I allowed users to navigate organically—particularly through the various built search functions—to understand their instinctive approach.</p>
+            <p>To supplement our findings, we leveraged product telemetry and search analytics—examining search queries, frequency, and behavioral patterns. The data revealed a critical insight: users were searching within broader material classes, wanting peripheral data on grouped materials already categorized in the subject.</p>
+        </div>
+
+        <div class="section">
+            <h2>Problem Statement:</h2>
+            <p>Users performing material selection searches are receiving misaligned results that don't align with their expectations, driving a bounce rate of XX% and a lower click-through rate (CTR), indicating that users are not engaging with the search results.</p>
+        </div>
+
+        <div class="section">
+            <h2>Impact of the Problem:</h2>
+            <p>When search underdelivers, users disengage. And when they disengage, platform usage drops below the threshold institutional buyers expect to justify renewal. The result? A direct line to >10% annual attrition.</p>
+        </div>
+
+        <div class="section">
+            <h2>Defining Success:</h2>
+            <p>A successful solution would improve search relevance for material selection, ensuring users receive intuitive and intent-aligned results. This would drive higher CTR, reduce bounce rates, and increase overall platform engagement—ultimately supporting subscription renewals.</p>
+        </div>
+
+        <div class="section">
+            <h2>Solution:</h2>
+            <p>Our internal search bar, powered by a knowledge model, required an additional search method to better align with user intent. The enhancement would enable users to search by material class, ensuring more relevant and intuitive results for material selection.</p>
+        </div>
+
+        <div class="section">
+            <h2>Implementation:</h2>
+            <p>Existing metadata already captured material classes and was ingested into our knowledge model. To address the remaining gaps, an SME manually enriched the dataset with missing material class metadata. Given our roadmap included a new semiconductor data module—and semiconductor materials ranked among the most searched classes—we prioritized their integration first.</p>
+        </div>
+
+        <div class="section">
+            <h2>Metrics:</h2>
+            <p>Success was measured by key engagement and retention indicators:</p>
+            <ul>
+                <li>Increased search volume – demonstrating greater user interaction with the search function.</li>
+                <li>Higher CTR from the results page – indicating improved relevance and alignment with user intent.</li>
+                <li>Longer session durations – showing deeper engagement with pertinent content and browsing behavior.</li>
+                <li>Increased file downloads (Excel, CIF, etc.) – reflecting higher user investment in retrieved data.</li>
+                <li>Higher annual subscriber retention – ensuring platform usage remained above renewal thresholds.</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Logo</div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/aamnts" target="_blank">LinkedIn</a>
+                <a href="Side_Projects.html">Projects</a>
+                <a href="Prints_of_Love.html">Case Studies</a>
+                <a href="mailto:aam1031@stern.nyu.edu">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Antonio Montes. All rights reserved.</p>
+            <a href="#">Any Trademark remains the property of its respective owner(s)</a>
+            <a href="#">Work cannot be used without permission from Antonio Montes</a>
+        </div>
+    </footer>
+
+</body>
+</html>
