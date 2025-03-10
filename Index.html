@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Antonio Montes Product Manager </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #f8f8f8;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header nav {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f8f8f8;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+                /* Hero Section */
+                .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 20px;
+        }
+        .hero-text {
+            width: 55%;
+        }
+        .hero-text h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero-text p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .hero-buttons {
+            margin-top: 20px;
+        }
+        .hero-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2F5D53;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .hero-image {
+            width: 40%;
+        }
+        .hero-image img {
+            width: 80%;
+            border-radius: 10px;
+        }
+        /* Featured Section */
+        .featured {
+            padding: 40px 20px;
+            text-align: center;
+            background: #f8f8f8;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .featured-item {
+            width: 30%;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        .featured-item h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .featured-item p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        /* About Section */
+        .about {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        /* Connect Section */
+        .connect {
+            padding: 40px 20px;
+            text-align: center;
+            background: #f8f8f8;
+        }
+        .connect h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .connect .buttons {
+            margin-top: 20px;
+        }
+        .connect button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            background-color: #2F5D53;
+            color: #FFFFFF;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #628067;
+            color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="AM_Logo.svg" alt="Antonio Montes Logo">
+        </div>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="About_Me.html">About Me</a>
+            <div class="dropdown">
+                <a href="#">Case Studies ▼</a>
+                <div class="dropdown-content">
+                    <a href="DaaS_Retention.html">DaaS Retention</a>
+                    <a href="Prints_of_Love.html">Prints Of Love</a>
+                </div>
+            </div>
+            <a href="Side_Projects.html">Side Projects</a>
+            <a href="https://www.linkedin.com/in/aamnts" target="_blank">LinkedIn</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Experienced Product Manager with a Creative Mind</h1>
+            <p>Hello! My name is Antonio, a product manager with a strong technical foundation and a passion for creating transformative solutions. Having recently completed an MBA with a specialization in Product Management from NYU's Stern School of Business, I bring a multidisciplinary background that helps me excel at the intersection of technology, business, and user experience.</p>
+            <div class="hero-buttons">
+                <a href="Side_Projects.html">View Projects</a>
+                <a href="DaaS_Retention.html">View Case Study 1</a>
+                <a href="Prints_of_Love.html">View Case Study 2</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.postimg.cc/wjD6sQ7C/temp-Imagey7owmz.avif" alt="Professional Headshot of Antonio Montes">
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section id="featured" class="featured">
+        <div class="featured-item">
+            <h3>Work Experience</h3>
+            <p>I’ve worked across industries ranging from aerospace to medical devices, and most recently, utilities—bringing strategic insight and executional rigor to every role.</p>
+        </div>
+        <div class="featured-item">
+            <h3>Skills &amp; Expertise</h3>
+            <p>I have built expertise in machine learning, natural language processing, and data science for business applications through research projects and coursework at NYU's Tandon School of Engineering and Stern School of Business.</p>
+        </div>
+        <div class="featured-item">
+            <h3>Featured Projects</h3>
+            <p>Explore my previous work through case studies and projects that demonstrate strategic product development and creative problem-solving.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>Always Learning to Enable Results Delivery</h2>
+        <p>I thrive on innovation and believe that the best products are built with a user-first mindset. Even this portfolio site is a testament to that—I designed, built, and hosted it using AI technologies like Relume AI, ChatGPT, AI Colors, Midjourney, and Vectorizer IO. Experimenting with the latest tools isn’t just something I do for fun—it’s how I push the boundaries of what’s possible.</p>
+    </section>
+
+    <!-- Connect Section -->
+    <section class="connect">
+        <h2>Connect with Me</h2>
+        <div class="buttons">
+            <a href="mailto:aam1031@stern.nyu.edu" class="button">Email Me</a>
+            <a href="https://www.linkedin.com/in/aamnts" target="_blank" class="button linkedin">Connect via LinkedIn</a>
+        </div>
+    </section>
+   
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="AM_Logo.svg" alt="Antonio Montes Logo">
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/aamnts" target="_blank">LinkedIn</a>
+                <a href="Side_Projects.html">Projects</a>
+                <a href="Prints_of_Love.html">Case Studies</a>
+                <a href="mailto:aam1031@stern.nyu.edu">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Antonio Montes. All rights reserved.</p>
+            <a href="#">Any Trademark remains the property of its respective owner(s)</a>
+            <a href="#">Work cannot be used without permission from Antonio Montes</a>
+        </div>
+    </footer>
+</body>
+</html>
